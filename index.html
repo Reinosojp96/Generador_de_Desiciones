@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Decisiones Aleatorias</title>
+  <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body class="light">
+  <button class="theme-toggle" id="themeToggle">Modo Oscuro</button>
+  <div class="panel-video">
+    <video id="bgVideo" autoplay muted loop>
+      <source src="public/assets/background.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="panel-interactive">
+    <div class="container">
+      <h1>¿Qué decisión tomas hoy?</h1>
+      <div class="controls">
+        <input id="newOption" type="text" placeholder="Añadir nueva opción">
+        <button id="addBtn">Añadir</button>
+        <button id="showListBtn">Mostrar Lista</button>
+      </div>
+      <button id="generateBtn">Generar decisión</button>
+      <p id="result" class="hidden">Presiona el botón para decidir</p>
+    </div>
+    <div class="list-panel" id="listPanel" style="display:none;">
+      <h2>Opciones</h2>
+      <ul id="optionsList"></ul>
+      <button id="closeListBtn">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="src/script/script.js"></script>
+</body>
+</html>
